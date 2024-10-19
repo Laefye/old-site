@@ -96,6 +96,10 @@ table .img-link, table .img-link img {
     background-position: 0 100%;
 }
 
+.btn-create span {
+    display: none;
+}
+
 a {
     color: #00f;
 }
