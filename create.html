@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pic98</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav -->
+    <div class="content">
+        <h1>Pic98</h1>
+        <table>
+            <tr>
+                <td><a href="index.html" class="img-link"><img src="static/home.gif" alt="Home"></a></td>
+                <td><a href="login.html" class="img-link"><img src="static/signin.gif" alt="Sign in"></a></td>
+                <td><a href="create.html" class="img-link"><img src="static/create.gif" alt="Create"></a></td>
+                <td style="width: 100%;">
+                    <form>
+                        <table>
+                            <tr>
+                                <td style="padding-bottom: 0;"><label for="search">Search</label></td>
+                                <td style="width: 100%; padding-bottom: 0;">
+                                    <input type="search" autocomplete="off" id="search" name="query" style="width: 100%;">
+                                </td>
+                                <td style="padding-bottom: 0;"><button type="submit" class="btn-img"><img src="static/search.gif" alt="Search"></button></td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="content">
+        <h2>Creating account</h2>
+        <form style="width: 400px; margin: 0 auto;" method="POST">
+            <table>
+                <tr>
+                    <td colspan="2" style="width: 50%; padding-right: 0;">
+                        <table>
+                            <tr>
+                                <td style="width: 50%;"><hr></td>
+                                <td style="white-space: nowrap;">Creditinals</td>
+                                <td style="width: 50%; padding-right: 0;"><hr></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email" style="white-space: nowrap;">E-Mail</label></td>
+                    <td style="width: 100%;"><input style="width: 100%;" type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td style="width: 100%;"><input style="width: 100%;" type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width: 50%; padding-right: 0;">
+                        <table>
+                            <tr>
+                                <td style="width: 50%;"><hr></td>
+                                <td style="white-space: nowrap;">About you</td>
+                                <td style="width: 50%; padding-right: 0;"><hr></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="name" style="white-space: nowrap;">Name</label></td>
+                    <td style="width: 100%;"><input style="width: 100%;" type="text" name="name" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="birthday" style="white-space: nowrap;">Birthday (D.M.Y)</label></td>
+                    <td style="width: 100%;">
+                        <table class="none">
+                            <tr>
+                                <td style="width: 33%;">
+                                    <div style="padding-right: 10px;">
+                                        <input style="width: 100%; margin-right: 5px;" type="number" placeholder="Day" min="1" max="31" name="birthday-day">
+                                    </div>
+                                </td>
+                                <td style="width: 33%;">
+                                    <div style="padding-right: 10px;">
+                                        <input style="width: 100%; margin-right: 5px;" type="number" placeholder="Month" min="1" max="12" name="birthday-month">
+                                    </div>
+                                </td>
+                                <td style="width: 34%;">
+                                    <input style="width: 100%; margin-right: 5px;" type="number" placeholder="Year" min="1900" name="birthday-year">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="checkbox" id="agreement" name="agreement">
+                        <label for="agreement" style="white-space: nowrap;">I agree to the <a href="licenseagreement.html">license agreement</a></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 0;"><button type="submit" class="btn-img btn-create"></button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="content">
+        Copyright 2024
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
